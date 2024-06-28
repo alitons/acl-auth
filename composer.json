@@ -1,0 +1,23 @@
+{
+    "name": "alitons/acl-auth",
+    "description": "Pacote para autenticar usando o ACL do ac.gov.br",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Acl\\Auth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Acl\\Auth\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers":[
+                "Acl\\Auth\\AclAuthServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
